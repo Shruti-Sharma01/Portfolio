@@ -1,0 +1,209 @@
+body{
+    border: border-box;
+}
+header{
+    height: 100px;
+    margin: 5px;
+}
+nav{
+    height: 80px;
+    margin: 20px;
+    padding: 10px;
+}
+#Logo{
+    font-size: 50px;
+    font-family: Satisfy;
+    margin: 5px;
+    position: absolute;
+}
+.menu{
+    display: flex;
+    margin-left: 700px;
+}
+#Home{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+#About{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+#Project{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+#Contact{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+#First{
+background-color: #007F73;
+height: 500px;
+}
+.greetings{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin: 70px;
+    margin-bottom: -40px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.img1{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 700px;
+}
+span{
+    font-family: Satisfy;
+    color: white;
+}
+#Second{
+    background-color: #4CCD99;
+    display: flex;
+}
+.about-me pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.about-me h1{
+    font-size: 100px;
+}
+#Third{
+    background-color: #FFC700;
+    display:inline-table;
+}
+#Fourth{
+    display: flex;
+}
+#Fifth{
+    display: flex;
+}
+.first{
+    height: 300px;
+    width: 300px;
+    background-color: #114232;
+    margin: 10px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+}
+.first img{
+    height: 230px;
+    width: 300px;
+}
+.first:hover, .first img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.second{
+    height: 300px;
+    width: 300px;
+    background-color: #87A922; 
+    margin: 10px;   
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.second img{
+    height: 230px;
+    width: 300px;
+}
+.second:hover, .second img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.third{
+    height: 300px;
+    width: 300px;
+    background-color: #115173; 
+    margin: 10px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.third img{
+    height: 230px;
+    width: 300px;
+}
+.third:hover, .third img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.forth{
+    height: 300px;
+    width: 300px;
+    background-color: #0D63A5; 
+    margin: 10px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.forth img{
+    height: 230px;
+    width: 300px;
+}
+.forth:hover, .forth img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.fifth{
+    height: 300px;
+    width: 300px;
+    background-color: #3A4750; 
+    margin: 10px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.fifth img{
+    height: 230px;
+    width: 300px;
+}
+.fifth:hover, .fifth img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sixth{
+    height: 300px;
+    width: 300px;
+    background-color: #C327AB; 
+    margin: 10px;
+}
+.seventh{
+    height: 300px;
+    width: 300px;
+    background-color: #61105E; 
+    margin: 10px;
+}
+.eighth{
+    height: 300px;
+    width: 300px;
+    background-color: #AD1D45; 
+    margin: 10px;
+}
+.nineth{
+    height: 300px;
+    width: 300px;
+    background-color: #83142C; 
+    margin: 10px;
+}
+.tenth{
+    height: 300px;
+    width: 300px;
+    background-color: #3B185F; 
+    margin: 10px;
+}

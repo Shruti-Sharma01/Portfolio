@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Matching Game</title>
+</head>
+<body>
+  <div class="memory-game">
+    <div class="cards" id="memory-cards"></div>
+  </div>
+  <style>
+    .memory-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.card {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card.flipped {
+  background-color: #fff;
+}
+  </style>
+  <script>
+    const symbols = ['😀', '😁', '😂', '🤣', '😃', '😄', '😅', '😆', '😉', '😊', '😋', '😎'];
+const cards = symbols.concat(symbols);
+let flippedCards = [];
+let matchedCards = [];
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+function createCard(symbol) {
+  const card = document.createElement('div');
+  card.classList.add('card');
+  card.innerHTML = `<span class="symbol">${symbol}</span>`;
+  card.addEventListener('click', () => flipCard(card));
+  return card;
+}
+
+function flipCard(card) {
+  if (flippedCards.length < 2 && !card.classList.contains('flipped') && !matchedCards.includes(card)) {
+    card.classList.add('flipped');
+    flippedCards.push(card);
+
+    if (flippedCards.length === 2) {
+      setTimeout(checkMatch, 1000);
+    }
+  }
+}
+
+function checkMatch() {
+  const [card1, card2] = flippedCards;
+  if (card1.querySelector('.symbol').innerText === card2.querySelector('.symbol').innerText) {
+    matchedCards.push(card1, card2);
+    flippedCards = [];
+    if (matchedCards.length === cards.length) {
+      alert('Congratulations! You won!');
+    }
+  } else {
+    setTimeout(() => {
+      card1.classList.remove('flipped');
+      card2.classList.remove('flipped');
+      flippedCards = [];
+    }, 1000);
+  }
+}
+
+function initializeGame() {
+  shuffle(cards);
+  const memoryCards = document.getElementById('memory-cards');
+  cards.forEach(symbol => {
+    const card = createCard(symbol);
+    memoryCards.appendChild(card);
+  });
+}
+
+initializeGame();
+
+  </script>
+</body>
+</html>
